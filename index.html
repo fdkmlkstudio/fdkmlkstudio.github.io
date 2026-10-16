@@ -3,34 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FDK Studio | Resmi Web Sitesi</title>
+<meta name="description" content="FDK Studio - Yapay zeka destekli animasyon, çizgi film ve yaratıcı dijital projeler.">
+<title>FDK Studio | Hayal Gücünün Yeni Dünyası</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#0b1426;color:#f4f5fa;font-family:Arial,sans-serif;text-align:center}
-header{padding:70px 20px;background:linear-gradient(135deg,#14294b,#080d1b)}
-h1{font-size:clamp(54px,12vw,90px);color:#eac36b;letter-spacing:5px;margin:0}
-h2{color:#eac36b}
-p{line-height:1.7;max-width:650px;margin:20px auto}
-section{padding:35px 22px}
-.card{background:#172640;border:1px solid #34425b;border-radius:16px;padding:25px;max-width:700px;margin:auto}
-footer{padding:25px;color:#adb7c9;font-size:14px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b1426;color:#f4f5fa;font-family:Arial,sans-serif;line-height:1.7}
+nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:18px 6%;background:#101d33}
+.logo{font-size:27px;font-weight:bold;letter-spacing:3px;color:#eac36b}
+nav a{color:#f4f5fa;text-decoration:none;margin-left:14px;font-size:14px}
+.hero{text-align:center;padding:100px 20px;background:linear-gradient(135deg,#172f54,#080d1b)}
+.hero h1{font-size:clamp(64px,14vw,110px);letter-spacing:7px;color:#eac36b;margin:0}
+.hero h2{color:#eac36b;margin:5px 0 20px}
+.hero p{max-width:620px;margin:0 auto 30px;font-size:19px}
+.button{display:inline-block;padding:12px 24px;border-radius:30px;background:#eac36b;color:#0b1426;font-weight:bold;text-decoration:none}
+section{padding:65px 20px;text-align:center}
+section h2{color:#eac36b;font-size:30px}
+section p{max-width:700px;margin:16px auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:950px;margin:30px auto}
+.card{background:#172640;border:1px solid #34425b;border-radius:18px;padding:28px}
+.card h3{color:#eac36b}
+.alt{background:#101d33}
+footer{text-align:center;padding:30px 20px;color:#adb7c9;border-top:1px solid #34425b;font-size:14px}
+@media(max-width:600px){nav{flex-direction:column}nav a{margin:0 7px}.hero{padding:75px 18px}section{padding:48px 18px}}
 </style>
 </head>
 <body>
-<header>
+<nav>
+<div class="logo">FDK</div>
+<div><a href="#hakkimizda">Hakkımızda</a><a href="#projeler">Projeler</a><a href="#youtube">YouTube</a></div>
+</nav>
+<header class="hero">
 <h1>FDK</h1>
 <h2>FDK Studio</h2>
-<p>Hayal gücü, teknoloji ve hikayeler bir arada.</p>
+<p>Hayal gücü, teknoloji ve hikayeler bir arada. Geleceğin hikayelerini bugünden tasarlıyoruz.</p>
+<a class="button" href="#projeler">Projelerimizi Keşfet</a>
 </header>
-<section>
+<section id="hakkimizda">
 <h2>FDK Dünyasına Hoş Geldiniz</h2>
-<p>Yapay zeka destekli çizgi filmler, özgün animasyonlar ve yaratıcı dijital projeler geliştiriyoruz.</p>
+<p>FDK Studio, yapay zeka destekli çizgi filmler, özgün animasyonlar ve yaratıcı dijital projeler geliştiren bağımsız bir içerik projesidir.</p>
 </section>
-<section>
-<div class="card">
-<h2>Çizgi Film Projemiz</h2>
-<p>İlk 10 bölümlük çizgi film sezonumuz için hazırlıklarımız devam ediyor. Yeni bölümlerimizi cumartesi günleri yayımlamayı planlıyoruz.</p>
+<section id="projeler" class="alt">
+<h2>Projelerimiz</h2>
+<div class="cards">
+<div class="card"><h3>İlk Çizgi Film Sezonumuz</h3><p>10 bölümlük ilk sezonumuzun hazırlıkları sürüyor. Bölümlerimizi cumartesi günleri yayımlamayı planlıyoruz.</p></div>
+<div class="card"><h3>Yapay Zeka ve Animasyon</h3><p>Yeni üretim teknolojilerini yaratıcı hikaye anlatımıyla birleştiriyoruz.</p></div>
+<div class="card"><h3>FDK'nin Geleceği</h3><p>Karakterlerimizi, hikayelerimizi ve dijital projelerimizi zamanla daha geniş bir dünyaya taşımayı hedefliyoruz.</p></div>
 </div>
+</section>
+<section id="youtube">
+<h2>YouTube'da FDK</h2>
+<p>Çizgi filmlerimiz, kısa videolarımız ve yeni projelerimiz için hazırlıklarımız devam ediyor.</p>
+<p>YouTube kanal bağlantımız yakında burada yer alacak.</p>
 </section>
 <footer>© 2026 FDK Studio. Tüm hakları saklıdır.</footer>
 </body>
